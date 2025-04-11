@@ -1,0 +1,12 @@
+未匹配记录分析报告
+总未匹配记录数: 141
+
+空值字段分布:
+education_description: 118条空值 (83.7%)
+marriage_status_description: 118条空值 (83.7%)
+children_num_description: 118条空值 (83.7%)
+interval_waybill: 23条空值 (16.3%)
+interval_work: 23条空值 (16.3%)
+
+数据类型检查:
+rider_id列: 信息表:int64, 行为表:int64
