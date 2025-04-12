@@ -53,6 +53,14 @@ def merge_data():
         if not weather_unmatched.empty:
             print(f"警告: 发现{len(weather_unmatched)}条记录缺少天气数据")
         
+        # 统一处理缺失值 - 将空字符串和'信息缺失'文本都转换为NaN
+        final_merged = final_merged.replace(['', '信息缺失'], pd.NA)
+        
+        # 检查interval_waybill和interval_work列的缺失行
+        missing_rows = final_merged[final_merged['interval_waybill'].isna() | final_merged['interval_work'].isna()]
+        print(f"\ninterval_waybill和interval_work列的缺失行数: {len(missing_rows)}")
+        print("缺失行索引:", missing_rows.index.tolist())
+        
         # 保存合并后的数据（分块处理）
         output_path = os.path.join(processed_data_dir, 'merged_data.csv')
         

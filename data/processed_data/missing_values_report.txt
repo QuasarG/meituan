@@ -1,0 +1,22 @@
+各列缺失值比例(%):
+rider_id                        0.00
+gender                          0.00
+age                             0.00
+born_province                   0.00
+regist_date                     0.00
+education_description          60.36
+marriage_status_description    60.82
+children_num_description       61.60
+dt                              0.00
+cnt_waybill                     0.00
+cnt_waybill_reject              0.00
+cnt_waybill_ontime              0.00
+interval_waybill                0.04
+interval_work                   0.04
+weight_weather_level            0.00
+temperature_range               0.00
+real_feel_range                 0.00
+humidity_range                  0.00
+wind_grade_range                0.00
+wind_range                      0.00
+rain_intensity_range            0.00
